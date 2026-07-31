@@ -1,0 +1,51 @@
+# Full stack: Qdrant server, the analysis API, and the collector as a one-shot job.
+#
+#   docker compose up -d qdrant api      # long-running services
+#   docker compose run --rm collector    # crawl once, straight into the API
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.16.1
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant-data:/qdrant/storage
+    healthcheck:
+      # The image has no curl/wget, but it does have bash — /dev/tcp is enough
+      # to prove the port is accepting connections.
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/localhost/6333'"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: ./api
+    ports:
+      - "8001:8001"
+    environment:
+      QDRANT_LOCATION: http://qdrant:6333
+      DATABASE_PATH: /data/market.db
+      REPORT_DIR: /reports
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      LLM_MODEL: ${LLM_MODEL:-qwen3.7-max}
+    volumes:
+      - api-data:/data
+      - ./reports:/reports
+    depends_on:
+      qdrant:
+        condition: service_healthy
+
+  collector:
+    build: ./scraper
+    # Posts each batch to the API as it goes, and keeps a JSONL copy on disk.
+    command: ["-source", "all", "-limit", "200", "-concurrency", "6",
+              "-out", "/data/raw/{source}.jsonl", "-api", "http://api:8001/ingest"]
+    volumes:
+      - ./data:/data
+    depends_on:
+      - api
+    profiles: ["jobs"]  # only runs when asked for, not on `up`
+
+volumes:
+  qdrant-data:
+  api-data:

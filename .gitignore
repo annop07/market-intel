@@ -1,0 +1,18 @@
+# secrets
+.env
+*.env.local
+
+# data & artefacts
+data/
+api/data/
+api/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# node
+node_modules/
+.next/
+.pytest_cache/
+dashboard/.next/
+dashboard/node_modules/

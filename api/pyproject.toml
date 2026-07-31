@@ -1,0 +1,29 @@
+[project]
+name = "market-intel-api"
+version = "0.1.0"
+description = "Market intelligence agent: ingest competitor catalogues, embed reviews, and produce an evidence-cited executive report."
+readme = "../README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "instructor>=1.15.4",
+    "openai>=2.50.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "python-dotenv>=1.2.2",
+    "qdrant-client[fastembed]>=1.18.0",
+    "uvicorn[standard]>=0.52.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning",
+]
+addopts = "-q"

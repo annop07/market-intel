@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  scraper:
+    name: Go collector
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: scraper
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version: "1.26"
+          cache-dependency-path: scraper/go.sum
+      - run: go vet ./...
+      - run: go build ./...
+      # -race catches the class of bug a worker pool is most likely to have.
+      - run: go test -race ./...
+
+  api:
+    name: Python API
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: api/uv.lock
+      - run: uv sync --frozen
+      # The suite is offline by design: no API key, no network, no vector model
+      # download — so CI stays green and fast.
+      - run: uv run pytest

@@ -1,0 +1,81 @@
+name: Nightly market report
+
+# scrape → embed → analyse → report → commit. The repository becomes the
+# report archive: every run leaves a dated Markdown file in reports/.
+on:
+  schedule:
+    - cron: "0 22 * * *" # 05:00 Asia/Bangkok
+  workflow_dispatch:
+    inputs:
+      category:
+        description: "Category to report on"
+        default: smartphones
+      limit:
+        description: "Max products per source"
+        default: "200"
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version: "1.26"
+          cache-dependency-path: scraper/go.sum
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: api/uv.lock
+
+      - name: Collect competitor catalogues
+        working-directory: scraper
+        run: |
+          go run ./cmd/collect \
+            -source all \
+            -limit "${{ github.event.inputs.limit || '200' }}" \
+            -concurrency 6 -rps 4 \
+            -out "../data/raw/{source}.jsonl"
+
+      # fastembed pulls ~130 MB of ONNX weights; caching keeps the nightly run short.
+      - name: Cache embedding model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/fastembed
+          key: fastembed-bge-small-en-v1.5
+
+      - name: Ingest, analyse and write the report
+        working-directory: api
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'qwen3.7-max' }}
+        run: |
+          uv sync --frozen
+          uv run python -m scripts.pipeline \
+            --input "../data/raw/*.jsonl" \
+            --report \
+            --category "${{ github.event.inputs.category || 'smartphones' }}"
+
+      - name: Commit the report and the price history
+        run: |
+          git config user.name  "market-intel-bot"
+          git config user.email "actions@github.com"
+          # history/ is what makes tomorrow's run able to see today's prices —
+          # the runner itself keeps nothing.
+          git add reports/ history/
+          # Nothing to commit is a normal outcome, not a failure.
+          git diff --staged --quiet || git commit -m "report: $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Publish the raw crawl as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-crawl-${{ github.run_number }}
+          path: data/raw/*.jsonl
+          retention-days: 14

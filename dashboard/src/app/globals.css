@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/*
+ * Design language: monochrome, zero-radius, hairline-ruled — the technical
+ * register of an instrument rather than a consumer app. Colour is reserved for
+ * data and for one accent; everything else is ink, paper and rules.
+ */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --inset: #f4f5f6;
+  --ink: #0b1014;
+  --muted: rgba(11, 16, 20, 0.62);
+  --subtle: rgba(11, 16, 20, 0.45);
+  --line: rgba(11, 16, 20, 0.16);
+  --line-strong: rgba(11, 16, 20, 0.32);
+
+  --accent: #2c63ff;
+  --accent-ink: #ffffff;
+  /* Data semantics: down/cheaper is good news for a buyer, up is pressure. */
+  --positive: #0f9d6e;
+  --negative: #dc2626;
+  --warn: #b45309;
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --surface: #0b1014;
+    --inset: #0e1519;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.62);
+    --subtle: rgba(255, 255, 255, 0.45);
+    --line: rgba(255, 255, 255, 0.16);
+    --line-strong: rgba(255, 255, 255, 0.32);
+
+    --positive: #10b981;
+    --negative: #f87171;
+    --warn: #f59e0b;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-inset: var(--inset);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warn: var(--warn);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Sharp by default: a stray `rounded-xl` cannot break the language. */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+}
+
+@layer base {
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    /* The generated template hard-coded Arial here, which quietly overrode the
+       Geist variables the layout loads. */
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    /* Light weight + negative tracking: editorial, not shouty. */
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Figures line up column-to-column; that is most of what makes a data table
+     look engineered rather than typed. */
+  .tabular-nums,
+  table,
+  .font-mono {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Small uppercase label above a section or figure. */
+  .eyebrow {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--subtle);
+  }
+
+  .panel {
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  /* Squared, uppercase, letter-spaced — the one loud element on the page. */
+  .btn-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.625rem 1rem;
+    transition: opacity 0.3s var(--ease);
+  }
+
+  .btn-accent:hover:not(:disabled) {
+    opacity: 0.85;
+  }
+
+  .btn-accent:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .btn-ghost {
+    border: 1px solid var(--line);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    padding: 0.5rem 0.75rem;
+    color: var(--muted);
+    transition:
+      color 0.3s var(--ease),
+      border-color 0.3s var(--ease);
+  }
+
+  .btn-ghost:hover {
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      var(--inset) 25%,
+      color-mix(in srgb, var(--inset) 60%, var(--line)) 37%,
+      var(--inset) 63%
+    );
+    background-size: 400% 100%;
+    animation: shimmer 1.4s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

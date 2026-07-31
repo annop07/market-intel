@@ -1,0 +1,628 @@
+{
+  "category": "smartphones",
+  "language": "th",
+  "generated_at": "2026-07-31T12:54:19.338986Z",
+  "products_analysed": 16,
+  "reviews_analysed": 48,
+  "headline": "Realme ครอง value segment ด้วย rating สูงสุด 4.16 ในขณะที่ pain point ระดับ category เรื่อง 'รายละเอียดสินค้า' (5 ข้อความเชิงลบจาก 5 mentions) เปิดช่องให้ทุก brand differentiate ได้ทันที",
+  "summary": "ตลาด smartphones มี 16 รายการ ราคากระจายตัวกว้าง $127.04–$996.92 (median $279.53) Apple นำฝั่ง premium ที่ avg $543.67 แต่ rating ต่ำสุด 3.22 ส่วน Realme ยึด budget-end ที่ avg $238.63 ด้วย rating 4.16 สูงสุดและ value score 1.74 ลูกค้าทั้ง market บ่นเรื่อง 'รายละเอียดสินค้า' ไม่ตรงปก 5 ครั้งโดยไม่มี positive mention เลย ซึ่งเป็น operational gap ที่ brand ใดแก้ก่อนจะชนะ trust ได้ทันที นอกจากนี้ยังมี price gap 60% ระหว่าง $412.94–$660.86 ที่ยังไม่มีสินค้าวางขาย ซึ่งเป็นโอกาสสำหรับ upper-mid tier product ใหม่",
+  "competitors": [
+    {
+      "brand": "Apple",
+      "positioning": "Premium price leader (avg $543.67, price index 194.5) แต่ rating ต่ำสุด 3.22 สะท้อน value perception ที่อ่อนแอ",
+      "strengths": [
+        "ความพึงพอใจโดยรวม (3 mentions)",
+        "คุณภาพสินค้า — 'Excellent quality!' (review dummyjson:122#29a7fbc463)",
+        "การซื้อซ้ำ — 'Would buy again!' (review dummyjson:123#08c86331fe)"
+      ],
+      "weaknesses": [
+        "รายละเอียดสินค้าไม่ตรงปก 2 mentions — 'Not as described!' (reviews dummyjson:121#58b19eb0a6, dummyjson:124#6490fa57fd)",
+        "ความคุ้มค่า — 'Not worth the price!' (review dummyjson:123#ffa102f5b2)"
+      ],
+      "evidence_review_ids": [
+        "dummyjson:122#29a7fbc463",
+        "dummyjson:123#08c86331fe",
+        "dummyjson:121#58b19eb0a6",
+        "dummyjson:124#6490fa57fd",
+        "dummyjson:123#ffa102f5b2"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "positioning": "Upper-mid tier (avg $434.98, rating 3.59) ครอบคลุมช่วง $241.34–$660.86 แต่ in-stock เพียง 66.7%",
+      "strengths": [
+        "ความพึงพอใจโดยรวม — 'Highly impressed!', 'Highly recommended!' (reviews dummyjson:132#b99aea624b, dummyjson:132#b78b0c7b9b)",
+        "ความเร็วจัดส่ง — 'Fast shipping!' (review dummyjson:131#142311a87e)",
+        "คุณภาพสินค้า — 'Excellent quality!' (review dummyjson:133#9c67f4db26)"
+      ],
+      "weaknesses": [
+        "รายละเอียดสินค้าไม่ตรงปก — 'Not as described!' (review dummyjson:131#5a11d4e2e0)",
+        "In-stock เพียง 66.7% ต่ำสุดใน category สะท้อน supply bottleneck"
+      ],
+      "evidence_review_ids": [
+        "dummyjson:132#b99aea624b",
+        "dummyjson:132#b78b0c7b9b",
+        "dummyjson:131#142311a87e",
+        "dummyjson:133#9c67f4db26",
+        "dummyjson:131#5a11d4e2e0"
+      ]
+    },
+    {
+      "brand": "Vivo",
+      "positioning": "Mid-tier value player (avg $294.83, value score 1.29) discount แรงสุด 15.1% เพื่อเร่ง volume",
+      "strengths": [
+        "ความพึงพอใจโดยรวม — 'Very satisfied!' (review dummyjson:134#cf5aa0aa43)",
+        "การซื้อซ้ำ — 'Would buy again!' (review dummyjson:134#f2013bec95)",
+        "ความคุ้มค่า — 'Great value for money!' (review dummyjson:135#718a1a1eda)",
+        "ความเร็วจัดส่ง — 'Fast shipping!' (review dummyjson:136#8f502ab81c)"
+      ],
+      "weaknesses": [
+        "รายละเอียดสินค้าถูก提及เป็นลบ 1 mention ใน brand"
+      ],
+      "evidence_review_ids": [
+        "dummyjson:134#cf5aa0aa43",
+        "dummyjson:134#f2013bec95",
+        "dummyjson:135#718a1a1eda",
+        "dummyjson:136#8f502ab81c"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "positioning": "Budget champion (avg $238.63, rating 4.16 สูงสุด, value score 1.74 สูงสุด) ครอง value-conscious segment ชัดเจน",
+      "strengths": [
+        "คุณภาพสินค้า (1 positive mention)",
+        "การซื้อซ้ำ — 'Would buy again!' (review dummyjson:129#1964ee0bad)",
+        "ความเร็วจัดส่ง — 'Fast shipping!' (review dummyjson:129#090e1510cc)",
+        "Rating 4.16 สูงสุดใน 5 brands"
+      ],
+      "weaknesses": [
+        "รายละเอียดสินค้าถูก提及เป็นลบ 1 mention ใน brand"
+      ],
+      "evidence_review_ids": [
+        "dummyjson:129#1964ee0bad",
+        "dummyjson:129#090e1510cc"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "positioning": "Mid-tier (avg $271.49, rating 3.9, value score 1.44) ไม่มี weakness ด้าน sentiment แต่มี quality concern บางส่วน",
+      "strengths": [
+        "คุณภาพ — 'Excellent quality!' (review dummyjson:125#225811d975)",
+        "ความพึงพอใจโดยรวม (2 mentions)",
+        "Rating 3.9 สูงเป็นอันดับ 2 รองจาก Realme"
+      ],
+      "weaknesses": [
+        "คุณภาพสินค้ามี negative mention — 'Poor quality!' (review dummyjson:125#865c7978b5)"
+      ],
+      "evidence_review_ids": [
+        "dummyjson:125#225811d975",
+        "dummyjson:125#865c7978b5"
+      ]
+    }
+  ],
+  "opportunities": [
+    {
+      "claim": "Pain point ระดับ category เรื่อง 'รายละเอียดสินค้า' ไม่ตรงปก เป็นโอกาสให้ brand ใด brand หนึ่ง position ตัวเป็น 'accurate listing guarantee' เพื่อชนะ trust",
+      "evidence_review_ids": [
+        "dummyjson:121#58b19eb0a6",
+        "dummyjson:131#5a11d4e2e0",
+        "dummyjson:124#6490fa57fd"
+      ],
+      "supporting_metric": "avg_score -1.0 across 5 mentions, 0 positive"
+    },
+    {
+      "claim": "Price gap 60% ($247.92) ระหว่าง $412.94–$660.86 (Vivo X21 ถึง Samsung Galaxy S10) เป็นช่องว่างที่ใหญ่ที่สุดใน upper-mid tier ที่ยังไม่มี product ครอบครอง",
+      "evidence_review_ids": [],
+      "supporting_metric": "gap 247.92, gap_pct 60.0%"
+    },
+    {
+      "claim": "Samsung in-stock เพียง 66.7% ต่ำสุดใน category — 1 ใน 3 products หมดสต็อก สะท้อน demand ที่ยังไม่ได้ serve ซึ่งเป็นโอกาสให้คู่แข่งเจาะตลาดในช่วง restock gap",
+      "evidence_review_ids": [],
+      "supporting_metric": "in_stock_pct 66.7"
+    },
+    {
+      "claim": "ลูกค้าให้คุณค่ากับการซื้อซ้ำสูงมาก (5 positive mentions, 0 negative) โดยเฉพาะ Realme (2 mentions) และ Vivo (1 mention) — นี่คือ retention signal ที่สามารถแปลงเป็น loyalty program ได้",
+      "evidence_review_ids": [
+        "dummyjson:134#f2013bec95",
+        "dummyjson:123#08c86331fe",
+        "dummyjson:129#1964ee0bad"
+      ],
+      "supporting_metric": "5 positive mentions, 0 negative for การซื้อซ้ำ"
+    }
+  ],
+  "threats": [
+    {
+      "claim": "Realme กำลังครอง budget segment ด้วย value score 1.74 สูงสุดและ rating 4.16 สูงสุด ถ้าเราอยู่ในช่วงราคา $200–$300 เราจะเสีย market share ให้ Realme อย่างต่อเนื่องหากไม่ match คุณภาพในราคาที่ใกล้เคียงกัน",
+      "evidence_review_ids": [
+        "dummyjson:129#1964ee0bad",
+        "dummyjson:129#090e1510cc"
+      ],
+      "supporting_metric": "value_score 1.74, avg_rating 4.16"
+    },
+    {
+      "claim": "Apple ถูก challenge เรื่องความคุ้มค่าโดยตรง — 'Not worth the price!' แม้จะขายที่ avg $543.67 ซึ่งเป็น price premium ที่อาจไม่สามารถรักษาไว้ได้หาก sentiment ด้าน value ยังเป็นลบ",
+      "evidence_review_ids": [
+        "dummyjson:123#ffa102f5b2"
+      ],
+      "supporting_metric": "avg_price 543.67, value_score 0.59 (lowest)"
+    },
+    {
+      "claim": "Oppo กำลังไต่ขึ้นด้วย rating 3.9 และ value score 1.44 พร้อม sentiment ด้านคุณภาพที่แข็งแรง — คุกคามตำแหน่ง mid-tier ของเราโดยตรงหากเรามี product ในช่วง $250–$300",
+      "evidence_review_ids": [
+        "dummyjson:125#225811d975"
+      ],
+      "supporting_metric": "avg_rating 3.9, value_score 1.44"
+    }
+  ],
+  "recommendations": [
+    {
+      "action": "ลงทุนใน accurate listing program — ตรวจสอบและรับรองว่าทุกรายการตรงกับสินค้าจริง พร้อม badge 'Verified Description' บนทุก product page",
+      "rationale": "'รายละเอียดสินค้า' เป็น aspect เดียวที่ได้ avg_score -1.0 ครอบคลุมทุก brand (Apple, Samsung, Vivo, Realme) การแก้ปัญหานี้จะสร้าง trust differentiation ที่คู่แข่งยังไม่ทำ",
+      "priority": "high"
+    },
+    {
+      "action": "ออก product ใหม่ในช่วงราคา $450–$600 เพื่อครอบครอง price gap 60% ระหว่าง Vivo X21 ($412.94) กับ Samsung Galaxy S10 ($660.86)",
+      "rationale": "ช่วงราคานี้ไม่มี product ใดวางขาย (gap 247.92 USD) ในขณะที่ Samsung in-stock เพียง 66.7% เปิดช่องให้เรา capture demand ที่ Samsung ไม่สามารถserve ได้",
+      "priority": "high"
+    },
+    {
+      "action": "สร้าง trade-in หรือ loyalty program ที่ target ลูกค้าที่พูดถึง 'การซื้อซ้ำ' โดยเฉพาะในกลุ่ม mid-tier (Vivo, Realme) ที่มี retention signal ชัดเจน",
+      "rationale": "การซื้อซ้ำมี 5 positive mentions, 0 negative — ลูกค้ากลุ่มนี้พร้อมกลับมาซื้อ แต่คู่แข่งยังไม่มี formal program จับพวกเขาไว้",
+      "priority": "medium"
+    },
+    {
+      "action": "หากอยู่ใน premium segment ให้ rebalance pricing — ลด avg price หรือเพิ่ม feature justification เพราะ value score ของ Apple ต่ำสุดที่ 0.59 พร้อม sentiment 'Not worth the price' จากลูกค้าจริง",
+      "rationale": "Price premium ที่ avg $543.67 กำลังถูก challenge โดย value perception ที่อ่อนแอ ในตลาดที่ value-conscious brands อย่าง Realme (value score 1.74) กำลังชนะ trust",
+      "priority": "medium"
+    }
+  ],
+  "pricing": {
+    "category": "smartphones",
+    "distribution": {
+      "count": 16,
+      "currency": "USD",
+      "min": 127.04,
+      "p25": 243.27,
+      "median": 279.53,
+      "p75": 405.29,
+      "p90": 692.27,
+      "max": 996.92,
+      "mean": 368.4
+    },
+    "brands": [
+      {
+        "brand": "Apple",
+        "products": 4,
+        "avg_price": 543.67,
+        "min_price": 174.17,
+        "max_price": 996.92,
+        "price_index": 194.5,
+        "avg_rating": 3.22,
+        "reviews": 12,
+        "in_stock_pct": 100.0,
+        "avg_discount_pct": 12.1,
+        "value_score": 0.59
+      },
+      {
+        "brand": "Samsung",
+        "products": 3,
+        "avg_price": 434.98,
+        "min_price": 241.34,
+        "max_price": 660.86,
+        "price_index": 155.6,
+        "avg_rating": 3.59,
+        "reviews": 9,
+        "in_stock_pct": 66.7,
+        "avg_discount_pct": 14.9,
+        "value_score": 0.83
+      },
+      {
+        "brand": "Vivo",
+        "products": 3,
+        "avg_price": 294.83,
+        "min_price": 224.57,
+        "max_price": 412.94,
+        "price_index": 105.5,
+        "avg_rating": 3.79,
+        "reviews": 9,
+        "in_stock_pct": 100.0,
+        "avg_discount_pct": 15.1,
+        "value_score": 1.29
+      },
+      {
+        "brand": "Oppo",
+        "products": 3,
+        "avg_price": 271.49,
+        "min_price": 243.92,
+        "max_price": 325.43,
+        "price_index": 97.1,
+        "avg_rating": 3.9,
+        "reviews": 9,
+        "in_stock_pct": 100.0,
+        "avg_discount_pct": 13.1,
+        "value_score": 1.44
+      },
+      {
+        "brand": "Realme",
+        "products": 3,
+        "avg_price": 238.63,
+        "min_price": 127.04,
+        "max_price": 309.71,
+        "price_index": 85.4,
+        "avg_rating": 4.16,
+        "reviews": 9,
+        "in_stock_pct": 100.0,
+        "avg_discount_pct": 11.3,
+        "value_score": 1.74
+      }
+    ],
+    "gaps": [
+      {
+        "lower_price": 723.68,
+        "upper_price": 996.92,
+        "gap": 273.24,
+        "gap_pct": 37.8,
+        "below": "Apple — iPhone X",
+        "above": "Apple — iPhone 13 Pro"
+      },
+      {
+        "lower_price": 412.94,
+        "upper_price": 660.86,
+        "gap": 247.92,
+        "gap_pct": 60.0,
+        "below": "Vivo — Vivo X21",
+        "above": "Samsung — Samsung Galaxy S10"
+      },
+      {
+        "lower_price": 325.43,
+        "upper_price": 402.74,
+        "gap": 77.31,
+        "gap_pct": 23.8,
+        "below": "Oppo — Oppo F19 Pro Plus",
+        "above": "Samsung — Samsung Galaxy S8"
+      }
+    ],
+    "observations": [
+      "Apple is the price leader at 543.67 average (194 vs category median = 100); Realme anchors the low end at 238.63.",
+      "Realme holds the highest average rating (4.16) across 3 product(s).",
+      "Vivo discounts hardest, averaging 15.1% off list.",
+      "1 of 16 listings are out of stock (6%) — demand the incumbents are not currently serving.",
+      "Prices span 127.04–996.92 (median 279.53, p90 692.27)."
+    ]
+  },
+  "sentiment": {
+    "category": "smartphones",
+    "brand": null,
+    "language": "th",
+    "reviews_analysed": 48,
+    "mentions_kept": 36,
+    "mentions_discarded": 0,
+    "aspects": [
+      {
+        "aspect": "ความพึงพอใจโดยรวม",
+        "mentions": 10,
+        "avg_score": 1.0,
+        "positive": 10,
+        "negative": 0,
+        "brands": {
+          "Apple": 3,
+          "Samsung": 2,
+          "Vivo": 2,
+          "Oppo": 2,
+          "Realme": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:132#b99aea624b",
+            "brand": "Samsung",
+            "product": "Samsung Galaxy S8",
+            "score": 1.0,
+            "quote": "Highly impressed!"
+          },
+          {
+            "review_id": "dummyjson:132#b78b0c7b9b",
+            "brand": "Samsung",
+            "product": "Samsung Galaxy S8",
+            "score": 1.0,
+            "quote": "Highly recommended!"
+          },
+          {
+            "review_id": "dummyjson:134#cf5aa0aa43",
+            "brand": "Vivo",
+            "product": "Vivo S1",
+            "score": 1.0,
+            "quote": "Very satisfied!"
+          }
+        ]
+      },
+      {
+        "aspect": "คุณภาพสินค้า",
+        "mentions": 8,
+        "avg_score": 0.525,
+        "positive": 6,
+        "negative": 2,
+        "brands": {
+          "Apple": 3,
+          "Oppo": 2,
+          "Realme": 1,
+          "Samsung": 1,
+          "Vivo": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:125#865c7978b5",
+            "brand": "Oppo",
+            "product": "Oppo A57",
+            "score": -1.0,
+            "quote": "Poor quality!"
+          },
+          {
+            "review_id": "dummyjson:122#29a7fbc463",
+            "brand": "Apple",
+            "product": "iPhone 6",
+            "score": 1.0,
+            "quote": "Excellent quality!"
+          },
+          {
+            "review_id": "dummyjson:125#367f9cff05",
+            "brand": "Oppo",
+            "product": "Oppo A57",
+            "score": 1.0,
+            "quote": "Excellent quality!"
+          }
+        ]
+      },
+      {
+        "aspect": "รายละเอียดสินค้า",
+        "mentions": 5,
+        "avg_score": -1.0,
+        "positive": 0,
+        "negative": 5,
+        "brands": {
+          "Apple": 2,
+          "Samsung": 1,
+          "Vivo": 1,
+          "Realme": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:121#58b19eb0a6",
+            "brand": "Apple",
+            "product": "iPhone 5s",
+            "score": -1.0,
+            "quote": "Not as described!"
+          },
+          {
+            "review_id": "dummyjson:131#5a11d4e2e0",
+            "brand": "Samsung",
+            "product": "Samsung Galaxy S7",
+            "score": -1.0,
+            "quote": "Not as described!"
+          },
+          {
+            "review_id": "dummyjson:124#6490fa57fd",
+            "brand": "Apple",
+            "product": "iPhone X",
+            "score": -1.0,
+            "quote": "Not as described!"
+          }
+        ]
+      },
+      {
+        "aspect": "การซื้อซ้ำ",
+        "mentions": 5,
+        "avg_score": 1.0,
+        "positive": 5,
+        "negative": 0,
+        "brands": {
+          "Realme": 2,
+          "Vivo": 1,
+          "Apple": 1,
+          "Samsung": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:134#f2013bec95",
+            "brand": "Vivo",
+            "product": "Vivo S1",
+            "score": 1.0,
+            "quote": "Would buy again!"
+          },
+          {
+            "review_id": "dummyjson:123#08c86331fe",
+            "brand": "Apple",
+            "product": "iPhone 13 Pro",
+            "score": 1.0,
+            "quote": "Would buy again!"
+          },
+          {
+            "review_id": "dummyjson:129#1964ee0bad",
+            "brand": "Realme",
+            "product": "Realme X",
+            "score": 1.0,
+            "quote": "Would buy again!"
+          }
+        ]
+      },
+      {
+        "aspect": "ความคุ้มค่า",
+        "mentions": 3,
+        "avg_score": 0.333,
+        "positive": 2,
+        "negative": 1,
+        "brands": {
+          "Apple": 2,
+          "Vivo": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:123#ffa102f5b2",
+            "brand": "Apple",
+            "product": "iPhone 13 Pro",
+            "score": -1.0,
+            "quote": "Not worth the price!"
+          },
+          {
+            "review_id": "dummyjson:135#718a1a1eda",
+            "brand": "Vivo",
+            "product": "Vivo V9",
+            "score": 1.0,
+            "quote": "Great value for money!"
+          },
+          {
+            "review_id": "dummyjson:122#9815c83499",
+            "brand": "Apple",
+            "product": "iPhone 6",
+            "score": 1.0,
+            "quote": "Great value for money!"
+          }
+        ]
+      },
+      {
+        "aspect": "ความเร็วจัดส่ง",
+        "mentions": 3,
+        "avg_score": 1.0,
+        "positive": 3,
+        "negative": 0,
+        "brands": {
+          "Samsung": 1,
+          "Vivo": 1,
+          "Realme": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:131#142311a87e",
+            "brand": "Samsung",
+            "product": "Samsung Galaxy S7",
+            "score": 1.0,
+            "quote": "Fast shipping!"
+          },
+          {
+            "review_id": "dummyjson:136#8f502ab81c",
+            "brand": "Vivo",
+            "product": "Vivo X21",
+            "score": 1.0,
+            "quote": "Fast shipping!"
+          },
+          {
+            "review_id": "dummyjson:129#090e1510cc",
+            "brand": "Realme",
+            "product": "Realme X",
+            "score": 1.0,
+            "quote": "Fast shipping!"
+          }
+        ]
+      },
+      {
+        "aspect": "คุณภาพ",
+        "mentions": 2,
+        "avg_score": 1.0,
+        "positive": 2,
+        "negative": 0,
+        "brands": {
+          "Samsung": 1,
+          "Oppo": 1
+        },
+        "evidence": [
+          {
+            "review_id": "dummyjson:133#9c67f4db26",
+            "brand": "Samsung",
+            "product": "Samsung Galaxy S10",
+            "score": 1.0,
+            "quote": "Excellent quality!"
+          },
+          {
+            "review_id": "dummyjson:125#225811d975",
+            "brand": "Oppo",
+            "product": "Oppo A57",
+            "score": 1.0,
+            "quote": "Excellent quality!"
+          }
+        ]
+      }
+    ],
+    "brands": [
+      {
+        "brand": "Apple",
+        "mentions": 11,
+        "avg_score": 0.291,
+        "strengths": [
+          "ความพึงพอใจโดยรวม",
+          "การซื้อซ้ำ",
+          "คุณภาพสินค้า"
+        ],
+        "weaknesses": [
+          "รายละเอียดสินค้า"
+        ]
+      },
+      {
+        "brand": "Samsung",
+        "mentions": 7,
+        "avg_score": 0.714,
+        "strengths": [
+          "ความเร็วจัดส่ง",
+          "คุณภาพสินค้า",
+          "ความพึงพอใจโดยรวม"
+        ],
+        "weaknesses": [
+          "รายละเอียดสินค้า"
+        ]
+      },
+      {
+        "brand": "Vivo",
+        "mentions": 7,
+        "avg_score": 0.714,
+        "strengths": [
+          "ความพึงพอใจโดยรวม",
+          "การซื้อซ้ำ",
+          "ความคุ้มค่า"
+        ],
+        "weaknesses": [
+          "รายละเอียดสินค้า"
+        ]
+      },
+      {
+        "brand": "Realme",
+        "mentions": 6,
+        "avg_score": 0.667,
+        "strengths": [
+          "คุณภาพสินค้า",
+          "การซื้อซ้ำ",
+          "ความเร็วจัดส่ง"
+        ],
+        "weaknesses": [
+          "รายละเอียดสินค้า"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "mentions": 5,
+        "avg_score": 0.6,
+        "strengths": [
+          "คุณภาพ",
+          "ความพึงพอใจโดยรวม"
+        ],
+        "weaknesses": []
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3532,
+      "completion_tokens": 9864,
+      "total_tokens": 13396,
+      "llm_calls": 2,
+      "models": [
+        "qwen3.7-max"
+      ]
+    }
+  },
+  "citations_dropped": 0,
+  "usage": {
+    "prompt_tokens": 8626,
+    "completion_tokens": 13490,
+    "total_tokens": 22116,
+    "llm_calls": 3,
+    "models": [
+      "qwen3.7-max"
+    ]
+  }
+}
